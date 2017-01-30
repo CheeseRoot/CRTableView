@@ -12,6 +12,11 @@
 		530229891E3FC48000F253D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530229871E3FC48000F253D9 /* Main.storyboard */; };
 		5302298B1E3FC48000F253D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5302298A1E3FC48000F253D9 /* Assets.xcassets */; };
 		5302298E1E3FC48000F253D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5302298C1E3FC48000F253D9 /* LaunchScreen.storyboard */; };
+		5302299B1E3FC57300F253D9 /* UdioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530229961E3FC57300F253D9 /* UdioTableViewCell.swift */; };
+		5302299C1E3FC57300F253D9 /* UdioTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530229971E3FC57300F253D9 /* UdioTableViewCellModel.swift */; };
+		5302299D1E3FC57300F253D9 /* UdioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530229981E3FC57300F253D9 /* UdioTableViewController.swift */; };
+		5302299E1E3FC57300F253D9 /* UdioTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530229991E3FC57300F253D9 /* UdioTableViewModel.swift */; };
+		5302299F1E3FC57300F253D9 /* UdioTableViewSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302299A1E3FC57300F253D9 /* UdioTableViewSectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		5302298A1E3FC48000F253D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5302298D1E3FC48000F253D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5302298F1E3FC48000F253D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		530229961E3FC57300F253D9 /* UdioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdioTableViewCell.swift; sourceTree = "<group>"; };
+		530229971E3FC57300F253D9 /* UdioTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdioTableViewCellModel.swift; sourceTree = "<group>"; };
+		530229981E3FC57300F253D9 /* UdioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdioTableViewController.swift; sourceTree = "<group>"; };
+		530229991E3FC57300F253D9 /* UdioTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdioTableViewModel.swift; sourceTree = "<group>"; };
+		5302299A1E3FC57300F253D9 /* UdioTableViewSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdioTableViewSectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				530229831E3FC48000F253D9 /* AppDelegate.swift */,
+				530229951E3FC4FF00F253D9 /* CRTableViewWrapper */,
 				530229851E3FC48000F253D9 /* ViewController.swift */,
 				530229871E3FC48000F253D9 /* Main.storyboard */,
 				5302298A1E3FC48000F253D9 /* Assets.xcassets */,
@@ -62,6 +73,18 @@
 				5302298F1E3FC48000F253D9 /* Info.plist */,
 			);
 			path = CRTableView;
+			sourceTree = "<group>";
+		};
+		530229951E3FC4FF00F253D9 /* CRTableViewWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				530229961E3FC57300F253D9 /* UdioTableViewCell.swift */,
+				530229971E3FC57300F253D9 /* UdioTableViewCellModel.swift */,
+				530229981E3FC57300F253D9 /* UdioTableViewController.swift */,
+				530229991E3FC57300F253D9 /* UdioTableViewModel.swift */,
+				5302299A1E3FC57300F253D9 /* UdioTableViewSectionModel.swift */,
+			);
+			path = CRTableViewWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +120,7 @@
 					5302297F1E3FC48000F253D9 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CDQEGMA96W;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5302299D1E3FC57300F253D9 /* UdioTableViewController.swift in Sources */,
+				5302299C1E3FC57300F253D9 /* UdioTableViewCellModel.swift in Sources */,
+				5302299F1E3FC57300F253D9 /* UdioTableViewSectionModel.swift in Sources */,
 				530229861E3FC48000F253D9 /* ViewController.swift in Sources */,
 				530229841E3FC48000F253D9 /* AppDelegate.swift in Sources */,
+				5302299E1E3FC57300F253D9 /* UdioTableViewModel.swift in Sources */,
+				5302299B1E3FC57300F253D9 /* UdioTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +329,7 @@
 				530229941E3FC48000F253D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
